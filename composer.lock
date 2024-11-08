@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eac0d37512901e07dbfa6fbe669fff82",
+    "content-hash": "b7849e16f224ded2e47f4c7993052483",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -18014,47 +18014,6 @@
             "time": "2024-09-04T18:46:31+00:00"
         },
         {
-            "name": "mylek/magento-module-test",
-            "version": "1.0.0-RC2",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:mylek/magento-module-test.git",
-                "reference": "e22e30785fd4495596bc53278d02caff0224c2ea"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mylek/magento-module-test/zipball/e22e30785fd4495596bc53278d02caff0224c2ea",
-                "reference": "e22e30785fd4495596bc53278d02caff0224c2ea",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mylsoft.repo.repman.io/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "magento/framework": "*",
-                "php": ">=8.1.0 <8.3.0"
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "registration.php"
-                ],
-                "psr-4": {
-                    "MylSoft\\Test\\": ""
-                }
-            },
-            "notification-url": "https://mylsoft.repo.repman.io/downloads",
-            "description": "N/A",
-            "support": {
-                "source": "https://github.com/mylek/magento-module-test/tree/1.0.0-RC2",
-                "issues": "https://github.com/mylek/magento-module-test/issues"
-            },
-            "time": "2024-11-03T10:11:39+00:00"
-        },
-        {
             "name": "nikic/php-parser",
             "version": "v4.19.4",
             "source": {
@@ -27923,9 +27882,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "mylek/magento-module-test": 5
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},
