@@ -22,8 +22,7 @@
         "cweagans/composer-patches": "^1.7",
         "magento/composer-dependency-version-audit-plugin": "~0.1",
         "magento/composer-root-update-plugin": "~2.0",
-        "magento/product-community-edition": "2.4.6",
-        "mylek/magento-module-test": "1.0.0-RC2"
+        "magento/product-community-edition": "2.4.6"
     },
     "autoload": {
         "exclude-from-classmap": [
