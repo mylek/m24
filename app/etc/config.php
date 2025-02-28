@@ -330,5 +330,222 @@ return [
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
         'Temando_ShippingRemover' => 1
+    ],
+    'scopes' => [
+        'websites' => [
+            'admin' => [
+                'website_id' => '0',
+                'code' => 'admin',
+                'name' => 'Admin',
+                'sort_order' => '0',
+                'default_group_id' => '0',
+                'is_default' => '0'
+            ],
+            'en' => [
+                'website_id' => '1',
+                'code' => 'en',
+                'name' => 'EN',
+                'sort_order' => '1',
+                'default_group_id' => '1',
+                'is_default' => '0'
+            ],
+            'pl' => [
+                'website_id' => '2',
+                'code' => 'pl',
+                'name' => 'PL',
+                'sort_order' => '2',
+                'default_group_id' => '2',
+                'is_default' => '1'
+            ]
+        ],
+        'groups' => [
+            [
+                'group_id' => '0',
+                'website_id' => '0',
+                'name' => 'Default',
+                'root_category_id' => '0',
+                'default_store_id' => '0',
+                'code' => 'default'
+            ],
+            [
+                'group_id' => '1',
+                'website_id' => '1',
+                'name' => 'EN',
+                'root_category_id' => '2',
+                'default_store_id' => '1',
+                'code' => 'en'
+            ],
+            [
+                'group_id' => '2',
+                'website_id' => '2',
+                'name' => 'PL',
+                'root_category_id' => '2',
+                'default_store_id' => '5',
+                'code' => 'pl'
+            ]
+        ],
+        'stores' => [
+            'admin' => [
+                'store_id' => '0',
+                'code' => 'admin',
+                'website_id' => '0',
+                'group_id' => '0',
+                'name' => 'Admin',
+                'sort_order' => '0',
+                'is_active' => '1'
+            ],
+            'en_eur' => [
+                'store_id' => '1',
+                'code' => 'en_eur',
+                'website_id' => '1',
+                'group_id' => '1',
+                'name' => 'EUR',
+                'sort_order' => '1',
+                'is_active' => '1'
+            ],
+            'en_pln' => [
+                'store_id' => '2',
+                'code' => 'en_pln',
+                'website_id' => '1',
+                'group_id' => '1',
+                'name' => 'PLN',
+                'sort_order' => '2',
+                'is_active' => '1'
+            ],
+            'en_usd' => [
+                'store_id' => '3',
+                'code' => 'en_usd',
+                'website_id' => '1',
+                'group_id' => '1',
+                'name' => 'USD',
+                'sort_order' => '3',
+                'is_active' => '1'
+            ],
+            'pl_eur' => [
+                'store_id' => '4',
+                'code' => 'pl_eur',
+                'website_id' => '2',
+                'group_id' => '2',
+                'name' => 'EUR',
+                'sort_order' => '1',
+                'is_active' => '1'
+            ],
+            'pl_pln' => [
+                'store_id' => '5',
+                'code' => 'pl_pln',
+                'website_id' => '2',
+                'group_id' => '2',
+                'name' => 'PLN',
+                'sort_order' => '2',
+                'is_active' => '1'
+            ],
+            'pl_usd' => [
+                'store_id' => '6',
+                'code' => 'pl_usd',
+                'website_id' => '2',
+                'group_id' => '2',
+                'name' => 'USD',
+                'sort_order' => '3',
+                'is_active' => '1'
+            ]
+        ]
+    ],
+    'system' => [
+        'stores' => [
+            'en_usd' => [
+                'currency' => [
+                    'options' => [
+                        'base' => 'USD',
+                        'default' => 'USD',
+                        'allow' => 'USD'
+                    ]
+                ]
+            ],
+            'en_eur' => [
+                'currency' => [
+                    'options' => [
+                        'base' => 'EUR',
+                        'default' => 'EUR',
+                        'allow' => 'EUR'
+                    ]
+                ]
+            ],
+            'en_pln' => [
+                'currency' => [
+                    'options' => [
+                        'base' => 'PLN',
+                        'default' => 'PLN',
+                        'allow' => 'PLN'
+                    ]
+                ]
+            ],
+            'pl_usd' => [
+                'currency' => [
+                    'options' => [
+                        'base' => 'USD',
+                        'default' => 'USD',
+                        'allow' => 'USD'
+                    ]
+                ]
+            ],
+            'pl_eur' => [
+                'currency' => [
+                    'options' => [
+                        'base' => 'EUR',
+                        'default' => 'EUR',
+                        'allow' => 'EUR'
+                    ]
+                ]
+            ],
+            'pl_pln' => [
+                'currency' => [
+                    'options' => [
+                        'base' => 'PLN',
+                        'default' => 'PLN',
+                        'allow' => 'PLN'
+                    ]
+                ]
+            ]
+        ],
+        'websites' => [
+            'pl' => [
+                'general' => [
+                    'locale' => [
+                        'code' => 'pl_PL'
+                    ]
+                ]
+            ],
+            'en' => [
+                'general' => [
+                    'locale' => [
+                        'code' => 'en_US'
+                    ]
+                ]
+            ]
+        ],
+        'default' => [
+            'catalog' => [
+                'price' => [
+                    'scope' => '2'
+                ]
+            ]
+        ],
+        'dev' => [
+            'template' => [
+                'minify_html' => '0'
+            ],
+            'css' => [
+                'merge_css_files' => '0'
+            ],
+            'js' => [
+                'enable_js_bundling' => '0',
+                'minify_files' => '1',
+                'merge_files' => '0',
+                'move_script_to_bottom' => '0'
+            ],
+            'static' => [
+                'sign' => '0'
+            ]
+        ]
     ]
 ];
